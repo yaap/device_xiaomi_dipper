@@ -7,6 +7,10 @@ persist.camera.sat.fallback.lux.d=20
 # Display
 ro.surface_flinger.has_wide_color_display=true
 
+# SurfaceFlinger
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+
 # Face Unlock
 ro.face.moto_unlock_service.cam_id=5
 
