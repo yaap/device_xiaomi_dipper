@@ -27,10 +27,14 @@ vendor/etc/tas2557_aac.ftcfg
 vendor/etc/tas2557_goer.ftcfg
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/libbtnv.so
+vendor/lib/libbtnv.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 
 # Camera
 vendor/bin/remosaic_daemon
@@ -199,7 +203,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 # GNSS
 vendor/bin/ignss_2_0
 vendor/bin/gps.cer
-vendor/bin/glgps|dd69eb4ca79c5cc28e262b4615df8dc5
+vendor/bin/glgps
 vendor/bin/lhd
 vendor/etc/gpsconfig.xml
 vendor/etc/gps.conf
@@ -214,8 +218,8 @@ vendor/lib/libdiagjni.so
 vendor/lib/libgps.utils.so
 
 # Hotword enrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -304,6 +308,9 @@ vendor/etc/thermal-engine-sdm845-sgame.conf
 vendor/etc/thermal-engine-sdm845-tgame.conf
 vendor/etc/thermal-engine-sdm845.conf
 vendor/etc/thermal-engine.conf
+<<<<<<< HEAD
 
 # WiFi
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
+=======
+>>>>>>> 9b5a896... dipper: Updates for Q blobs
