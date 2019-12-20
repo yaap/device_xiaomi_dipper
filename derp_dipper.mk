@@ -8,6 +8,8 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 
 # Inherit some common DerpFest stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_GAPPS_ARCH := arm64
