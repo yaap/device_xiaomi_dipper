@@ -6,7 +6,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-ifeq ($(CURRENT_BUILD_TYPE), gapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), GAPPS)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 endif
 
@@ -17,16 +17,21 @@ $(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
 
-# GoogleCamera
+# Camera2
 PRODUCT_PACKAGES += \
-    Camera2 \
+    Camera2
+
+# Gcam
+ifeq ($(DERP_BUILD_ZIP_TYPE), GAPPS)
+PRODUCT_PACKAGES += \
     gcam
+endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-nogapps
 endif
