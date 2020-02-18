@@ -1,0 +1,14 @@
+# Audio
+ro.vendor.audio.soundfx.type=mi
+
+# Fingerprint
+ro.hardware.fp.fpc=true
+ro.hardware.fp.goodix=true
+
+# GNSS
+ro.hardware.flp=brcm
+ro.hardware.gps=brcm
+
+# NFC
+ro.hardware.nfc_nci=nqx.default
+ro.se.type=HCE,UICC
