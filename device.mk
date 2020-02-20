@@ -21,11 +21,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     Camera2
 
-# Gcam
-ifeq ($(DERP_BUILD_ZIP_TYPE), GAPPS)
-PRODUCT_PACKAGES += \
-    gcam
-endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
