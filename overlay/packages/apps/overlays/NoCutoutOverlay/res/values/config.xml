@@ -28,5 +28,9 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">28dp</dimen>
     <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="rounded_corner_content_padding">70.0px</dimen>
+    <dimen name="rounded_corner_radius_top">50.0px</dimen>
+    <dimen name="status_bar_padding_top">1.0dip</dimen>
+    <dimen name="system_icons_super_container_avatarless_margin_end">56.0px</dimen>
 
 </resources>
