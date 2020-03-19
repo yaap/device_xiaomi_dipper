@@ -13,6 +13,9 @@ endif
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
 
+# Get Firmware Source
+$(call inherit-product, vendor/xiaomi/dipper-firmware/firmware.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
