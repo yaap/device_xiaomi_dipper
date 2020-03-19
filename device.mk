@@ -26,6 +26,11 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-nogapps
+endif
+
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
