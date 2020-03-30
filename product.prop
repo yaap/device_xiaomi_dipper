@@ -7,6 +7,9 @@ persist.camera.sat.fallback.lux.d=20
 # Display
 ro.surface_flinger.has_wide_color_display=true
 
+# Face Unlock
+ro.face.moto_unlock_service.cam_id=5
+
  # USB debugging
 persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
