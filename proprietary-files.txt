@@ -305,9 +305,4 @@ vendor/etc/thermal-engine-sdm845-sgame.conf
 vendor/etc/thermal-engine-sdm845-tgame.conf
 vendor/etc/thermal-engine-sdm845.conf
 vendor/etc/thermal-engine.conf
-<<<<<<< HEAD
 
-# WiFi
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-=======
->>>>>>> 9b5a896... dipper: Updates for Q blobs
