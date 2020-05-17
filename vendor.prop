@@ -5,6 +5,9 @@ ro.vendor.audio.soundfx.type=mi
 ro.hardware.fp.fpc=true
 ro.hardware.fp.goodix=true
 
+# Display postprocessing
+vendor.display.enable_default_color_mode=1
+
 # GNSS
 ro.hardware.flp=brcm
 ro.hardware.gps=brcm
