@@ -29,6 +29,7 @@
 
 on init
     write /sys/class/leds/ir/max_brightness 63
+    write /sys/kernel/fast_charge/force_fast_charge 1
 
 on boot
     chown gps system /sys/devices/platform/soc/890000.spi/spi_master/spi32766/spi32766.0/nstandby
