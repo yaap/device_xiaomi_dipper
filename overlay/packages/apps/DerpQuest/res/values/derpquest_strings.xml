@@ -15,8 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <string name="maintainer_name">ALKALiKong</string>
-    <string name="maintainer_telegram">https://t.me/alksgroup</string>
-
+     <string name="maintainer_name" translatable="false">ALKALiKong</string> 
+     <string name="maintainer_telegram" translatable="false">https://t.me/alksgroup</string>
+     <string name="about_device_fw_ver" translatable="false">DerpFirmware</string> <!-- Firmware version -->
+     <string name="about_device_fw_link" translatable="false">https://gitlab.com/ALKALiKong/vendor_xiaomi_dipper-firmware</string> <!-- Firmware link -->
+     <string name="about_device_recovery_ver" translatable="false">OrangeFox</string> <!-- Recovery version -->
+     <string name="about_device_recovery_link" translatable="false">https://sourceforge.net/projects/orangefox/files/dipper/</string> <!-- Recovery link -->
 </resources>
