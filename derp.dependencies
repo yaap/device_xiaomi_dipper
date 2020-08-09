@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "device_xiaomi_sdm845-common",
+    "target_path": "device/xiaomi/sdm845-common",
+    "branch": "ten"
+  },
+  {
+    "repository":  "kernel_xiaomi_sdm845",
+    "target_path": "kernel/xiaomi/sdm845",
+    "branch": "ten"
+  },
+  {
+    "repository": "ALKALiKong/vendor_xiaomi_dipper-firmware",
+    "target_path": "vendor/xiaomi/dipper-firmware",
+    "branch": "ten",
+    "remote": "gitlab"
+  },
+  {
+    "repository": "vendor_xiaomi_dipper",
+    "target_path": "vendor/xiaomi/dipper",
+    "branch": "ten"
+  }
+]
