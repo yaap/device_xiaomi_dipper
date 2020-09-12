@@ -6,9 +6,6 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-ifeq ($(DERP_BUILD_ZIP_TYPE), GAPPS)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
@@ -28,11 +25,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-nogapps
-endif
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -123,7 +115,3 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
