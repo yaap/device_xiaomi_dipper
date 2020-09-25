@@ -21,6 +21,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     Camera2
 
+# Messaging
+PRODUCT_PACKAGES += \
+   messaging
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
