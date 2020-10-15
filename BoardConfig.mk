@@ -23,7 +23,7 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
+TARGET_KERNEL_SOURCE := kernel/xiaomi/dipper
 TARGET_KERNEL_CONFIG := dipper_defconfig
 
 # HIDL
