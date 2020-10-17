@@ -29,9 +29,6 @@ TARGET_KERNEL_CONFIG := dipper_defconfig
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
@@ -41,6 +38,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/dipper/BoardConfigVendor.mk

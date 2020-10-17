@@ -91,16 +91,10 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.gsma.services.nfc \
-    com.nxp.nfc.nq \
-    libnqnfc_nci_jni \
-    nfc_nci.nqx.default.hw \
-    NQNfcNci \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
+    android.hardware.nfc@1.2-service \
+    NfcNci \
     Tag \
-    vendor.nxp.hardware.nfc@1.2-service
+    android.hardware.secure_element@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
