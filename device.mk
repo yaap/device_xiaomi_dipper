@@ -22,8 +22,10 @@ PRODUCT_PACKAGES += \
     Camera2
 
 # Messaging
+ifneq ($(TARGET_BUILD_GAPPS), true)
 PRODUCT_PACKAGES += \
    messaging
+endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
