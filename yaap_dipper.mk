@@ -16,11 +16,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
 PRODUCT_MANUFACTURER := Xiaomi
 
-ifeq ($(TARGET_BUILD_GAPPS), true)
-TARGET_ARCH := arm64
-IS_PHONE := true
-endif
-
 # Build fingerprint
 BUILD_FINGERPRINT := Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys
 BUILD_DESC := dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys
