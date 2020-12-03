@@ -20,6 +20,12 @@ $(call inherit-product, vendor/xiaomi/dipper-firmware/firmware.mk)
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
 
+# Via
+ifneq ($(TARGET_BUILD_GAPPS), true)
+PRODUCT_PACKAGES += \
+        Via
+endif
+
 # Camera2
 PRODUCT_PACKAGES += \
     Camera2
