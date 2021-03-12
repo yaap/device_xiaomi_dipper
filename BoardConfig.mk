@@ -25,6 +25,7 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/dipper
 TARGET_KERNEL_CONFIG := dipper_defconfig
+TARGET_KERNEL_CLANG_VERSION := proton
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
