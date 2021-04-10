@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint@2.2-service.xiaomi_sdm845
 
 # GPS
 PRODUCT_COPY_FILES += \
