@@ -14,6 +14,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="maintainer_name" translatable="false">ALKALiKong</string>
     <string name="maintainer_telegram" translatable="false">https://t.me/alksgroup</string>
-    <string name="kernel_name" translatable="false">ALKALiKong</string>
-    <string name="kernel_telegram" translatable="false">https://github.com/ALKALiKong233</string>
+    <string name="kernel_name" translatable="false">Chenyang Zhong</string>
+    <string name="kernel_telegram" translatable="false">https://github.com/jjpprrrr</string>
 </resources>
