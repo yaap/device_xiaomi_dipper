@@ -7,13 +7,7 @@
   {
     "repository":  "kernel_xiaomi_dipper",
     "target_path": "kernel/xiaomi/dipper",
-    "branch": "R"
-  },
-  {
-    "repository": "ALKALiKong/vendor_xiaomi_dipper-firmware",
-    "target_path": "vendor/xiaomi/dipper-firmware",
-    "branch": "master",
-    "remote": "gitlab"
+    "branch": "eleven"
   },
   {
     "repository": "vendor_xiaomi_dipper",
