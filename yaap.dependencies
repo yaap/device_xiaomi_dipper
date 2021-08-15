@@ -13,5 +13,11 @@
     "repository": "vendor_xiaomi_dipper",
     "target_path": "vendor/xiaomi/dipper",
     "branch": "eleven"
+  },
+  {
+    "repository": "crdroidandroid/android_vendor_miuicamera",
+    "target_path": "vendor/miuicamera",
+    "branch": "11.0",
+    "remote": "gitlab"
   }
 ]

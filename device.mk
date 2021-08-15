@@ -13,6 +13,9 @@ endif
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
 
+# MIUI Camera
+$(call inherit-product, vendor/miuicamera/config.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
@@ -22,10 +25,6 @@ ifneq ($(TARGET_BUILD_GAPPS), true)
 PRODUCT_PACKAGES += \
         Via
 endif
-
-# Camera2
-PRODUCT_PACKAGES += \
-    Camera2
 
 # Messaging
 ifneq ($(TARGET_BUILD_GAPPS), true)
